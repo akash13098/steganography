@@ -1,0 +1,119 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+/* 🖼️ Centered and Spacious Containers */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.input-group {
+    margin: 20px 0;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* 🔥 Stylish File Input */
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    background: #ffcc00;
+    color: black;
+    padding: 14px 22px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-bottom: 15px;
+}
+
+.custom-file-upload:hover {
+    background: #ffaa00;
+}
+
+/* 🖌️ Stylish Input Fields */
+input[type="text"], input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    text-align: center;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+input[type="text"]::placeholder, input[type="password"]::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* 🎨 Styled Buttons */
+button {
+    background: #00c9ff;
+    color: white;
+    border: none;
+    padding: 14px 22px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #0086b3;
+}
+
+/* 📌 Decoded Text Styling */
+#decodedText {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #00ff99;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}

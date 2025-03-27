@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steganography Encoder/Decoder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>🔐 Steganography Platform</h2>
+
+    <div class="container">
+        <h3>Encode Message</h3>
+        <label for="encodeImage" class="custom-file-upload">📂 Choose Image</label>
+        <input type="file" id="encodeImage" accept="image/*">
+        <input type="text" id="secretMessage" placeholder="Enter Secret Message">
+        <input type="password" id="encodePassword" placeholder="Enter Password">
+        <button onclick="encodeMessage()">Encode & Download</button>
+    </div>
+
+    <br><br>
+
+    <div class="container">
+        <h3>Decode Message</h3>
+        <label for="decodeImage" class="custom-file-upload">📂 Choose Encoded Image</label>
+        <input type="file" id="decodeImage" accept="image/*">
+        <input type="password" id="decodePassword" placeholder="Enter Password">
+        <button onclick="decodeMessage()">Decode Message</button>
+        <p id="decodedText"></p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
